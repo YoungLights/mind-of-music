@@ -1,0 +1,16 @@
+{
+  "name": "mindofmusic",
+  "version": "1.0.0",
+  "description": "Website for music related company",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w assets/sass -o assets/css"
+  },
+  "author": "YOUNG LIGHTS",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "node-sass": "^4.13.1"
+  }
+}

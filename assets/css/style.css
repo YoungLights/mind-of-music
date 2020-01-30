@@ -1,0 +1,253 @@
+/* CSS Reset ----------------------------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline; }
+
+article, aside, figure, footer, header, hgroup, nav, section {
+  display: block; }
+
+header.main-header div#main-header-image {
+  height: 100vh; }
+  header.main-header div#main-header-image img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    object-position: center top; }
+
+header.main-header div#main-header-nav {
+  position: fixed;
+  top: 0px;
+  z-index: 200;
+  background: #ffffff;
+  width: 100%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  padding: 0px 200px;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  align-items: center;
+  filter: alpha(opacity=98);
+  -khtml-opacity: 0.98;
+  -webkit-opacity: 0.98;
+  -moz-opacity: 0.98;
+  opacity: 0.98; }
+  header.main-header div#main-header-nav a.main-header-logo {
+    justify-self: start; }
+    header.main-header div#main-header-nav a.main-header-logo img {
+      width: 200px;
+      height: auto; }
+  header.main-header div#main-header-nav nav {
+    justify-self: end; }
+    header.main-header div#main-header-nav nav a, header.main-header div#main-header-nav nav a:link, header.main-header div#main-header-nav nav a:active, header.main-header div#main-header-nav nav a:visited {
+      padding: 28px 10px;
+      text-transform: uppercase;
+      display: inline-block;
+      font-size: 0.7em;
+      color: #555555;
+      margin-left: 20px;
+      letter-spacing: 2px; }
+      header.main-header div#main-header-nav nav a:hover, header.main-header div#main-header-nav nav a:link:hover, header.main-header div#main-header-nav nav a:active:hover, header.main-header div#main-header-nav nav a:visited:hover {
+        color: #1d73be; }
+
+body, html {
+  font-family: "Raleway", sans-serif;
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
+* {
+  box-sizing: border-box; }
+
+.clear-left {
+  clear: left; }
+
+.clear-right {
+  clear: right; }
+
+.clear-both {
+  clear: both; }
+
+a, a:link, a:active, a:visited {
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out; }
+
+.imgcenter {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
+.imgud {
+  position: absolute;
+  margin: auto;
+  top: -9999px;
+  bottom: -9999px;
+  right: -9999px;
+  left: -9999px; }
+
+section.content {
+  padding: 90px 200px 100px 200px; }
+  section.content h1 {
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+    text-transform: uppercase; }
+  section.content:nth-child(odd) {
+    background: #f7f7f7; }
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px; }
+
+article p {
+  color: #888888;
+  font-size: 0.9rem;
+  line-height: 170%;
+  word-wrap: break-word;
+  hyphens: auto; }
+
+.team-content {
+  text-align: center; }
+  .team-content h2 {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 25px; }
+  .team-content h4 {
+    color: #1d73be;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    margin-top: 8px;
+    letter-spacing: 2px;
+    font-weight: 300; }
+
+.work-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: #1d73be; }
+  .work-grid .work-item {
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer; }
+    .work-grid .work-item:hover img {
+      transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      filter: alpha(opacity=20);
+      -khtml-opacity: 0.2;
+      -webkit-opacity: 0.2;
+      -moz-opacity: 0.2;
+      opacity: 0.2; }
+    .work-grid .work-item:hover .work-details {
+      transition: all 0.3s ease-in-out 0.6s;
+      -webkit-transition: all 0.3s ease-in-out 0.6s;
+      -moz-transition: all 0.3s ease-in-out 0.6s;
+      -o-transition: all 0.3s ease-in-out 0.6s;
+      -ms-transition: all 0.3s ease-in-out 0.6s;
+      filter: alpha(opacity=100);
+      -khtml-opacity: 1;
+      -webkit-opacity: 1;
+      -moz-opacity: 1;
+      opacity: 1;
+      transform: translateY(0px); }
+    .work-grid .work-item img {
+      object-fit: cover;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      object-position: center center;
+      width: 100%;
+      height: 100%;
+      transition: all 1.5s ease-in-out;
+      -webkit-transition: all 1.5s ease-in-out;
+      -moz-transition: all 1.5s ease-in-out;
+      -o-transition: all 1.5s ease-in-out;
+      -ms-transition: all 1.5s ease-in-out; }
+    .work-grid .work-item .work-details {
+      position: relative;
+      z-index: 200;
+      text-align: center;
+      padding: 0px 15px;
+      color: #ffffff;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out 0.1s;
+      -webkit-transition: all 0.3s ease-in-out 0.1s;
+      -moz-transition: all 0.3s ease-in-out 0.1s;
+      -o-transition: all 0.3s ease-in-out 0.1s;
+      -ms-transition: all 0.3s ease-in-out 0.1s;
+      filter: alpha(opacity=0);
+      -khtml-opacity: 0;
+      -webkit-opacity: 0;
+      -moz-opacity: 0;
+      opacity: 0;
+      transform: translateY(-100px); }
+      .work-grid .work-item .work-details span {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 17px;
+        font-family: "Lato", sans-serif;
+        font-size: 0.7em;
+        letter-spacing: 2px;
+        border-bottom: solid 1px #ffffff;
+        padding: 5px 15px; }
+      .work-grid .work-item .work-details h4 {
+        font-size: 1.1em; }
+      .work-grid .work-item .work-details h3 {
+        font-size: 0.9em; }
+      .work-grid .work-item .work-details p {
+        font-weight: 700;
+        margin-top: 17px;
+        letter-spacing: 2px;
+        font-size: 0.7em;
+        border-top: solid 1px #ffffff;
+        padding: 5px 15px; }
+
+#referenzen-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  padding-top: 30px; }
+  #referenzen-grid div h2 {
+    font-size: 0.9em;
+    font-weight: 900;
+    text-transform: uppercase;
+    position: relative;
+    border-bottom: solid 1px #000000;
+    padding-bottom: 15px; }
+  #referenzen-grid div ul {
+    line-height: 170%;
+    padding: 20px;
+    margin-left: 15px;
+    color: #888888;
+    font-size: 0.9em; }

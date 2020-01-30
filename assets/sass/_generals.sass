@@ -1,0 +1,37 @@
+body, html 
+	font-family: $main-font
+	height: 100%
+	width: 100%
+	position: relative
+
+*
+	box-sizing: border-box
+
+.clear-left	
+	clear: left
+.clear-right 
+	clear: right
+.clear-both 
+	clear: both
+
+a, a:link, a:active, a:visited 
+	outline: none 
+	text-decoration: none
+	cursor: pointer
+	+transit (all 0.2s ease-in-out)
+
+.imgcenter
+	position: absolute
+	margin: auto
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+
+.imgud
+	position: absolute
+	margin: auto
+	top: -9999px
+	bottom: -9999px
+	right: -9999px
+	left: -9999px	

@@ -1,0 +1,65 @@
+=transit ($msec...)
+	transition: $msec
+	-webkit-transition: $msec
+	-moz-transition: $msec
+	-o-transition: $msec
+	-ms-transition: $msec
+
+=opacit ($val)
+	filter: alpha(opacity=$val)
+	$valu: $val/100
+	-khtml-opacity: $valu
+	-webkit-opacity: $valu
+	-moz-opacity: $valu
+	opacity: $valu
+
+=brd ($ra) 
+	border-radius: $ra
+	-moz-border-radius: $ra
+	-o-border-radius: $ra
+	-webkit-border-radius: $ra
+	-ms-border-radius: $ra
+
+=bgsize ($bgs)
+	-webkit-background-size: $bgs
+	-moz-background-size: $bgs
+	-o-background-size: $bgs
+	background-size: $bgs
+
+=rotate ($rot)
+	-ms-transform: rotate($rot)
+	-webkit-transform: rotate($rot)
+	transform: rotate($rot)
+
+=scale ($sca)
+	transform: scale($sca)
+	-ms-transform: scale($sca)
+	-webkit-transform: scale($sca)
+	-o-transform: scale($sca)
+	-moz-transform: scale($sca)
+
+=skew ($sca)
+	transform: skew($sca)
+	-ms-transform: skew($sca)
+	-webkit-transform: skew($sca)
+	-o-transform: skew($sca)
+	-moz-transform: skew($sca)
+
+=skewY ($sca)
+	transform: skewY($sca)
+	-ms-transform: skewY($sca)
+	-webkit-transform: skewY($sca)
+	-o-transform: skewY($sca)
+	-moz-transform: skewY($sca)	
+
+=shadow ($sha)
+	box-shadow: $sha
+	-webkit-box-shadow: $sha
+	-moz-box-shadow: $sha
+
+=translate ($x, $y)
+	-webkit-transform: translate($x, $y)
+	-moz-transform: translate($x, $y)
+	-ms-transform: translate($x, $y)
+	-o-transform: translate($x, $y)
+	transform: translate($x, $y)

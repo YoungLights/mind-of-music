@@ -1,0 +1,49 @@
+header.main-header
+    div#main-header-image
+        height: 100vh
+
+        img 
+            width: 100%
+            height: 100%
+            position: absolute
+            top: 0px
+            left: 0px
+            object-fit: cover
+            object-position: center top
+    
+    div#main-header-nav
+        position: fixed
+        top: 0px
+        z-index: 200
+        background: $white
+        width: 100%
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25)
+        padding: 0px 200px
+        display: grid 
+        grid-template-columns: 0.6fr 1.4fr 
+        align-items: center
+        +opacit(98)
+
+        a.main-header-logo
+            justify-self: start
+
+            img 
+                width: 200px
+                height: auto
+
+        nav
+            justify-self: end
+
+            a, a:link, a:active, a:visited
+                padding: 28px 10px 
+                text-transform: uppercase
+                display: inline-block
+                font-size: 0.7em
+                color: $darkgrey
+                margin-left: 20px
+                letter-spacing: 2px
+
+                &:hover
+                    color: $blue
+
+
