@@ -1,6 +1,7 @@
 const express = require('express');
 const hbs = require('express-handlebars');
 const path = require('path');
+const catherine = 'Hey ich bins ... Gustel';
 
 const app = express();
 
